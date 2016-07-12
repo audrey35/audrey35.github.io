@@ -102,6 +102,11 @@ footer p {
     float: left;
 }
 
+footer a img {
+    width: 15%;
+    margin-bottom: 5%;
+}
+
 footer div {
     float: right;
 }
