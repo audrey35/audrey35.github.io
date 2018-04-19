@@ -190,7 +190,13 @@ PAGE: CONTACT
     background-image: url('../img/twitter.png');
 }
 
+/**********************************
+PAGE: MAP
+***********************************/
 
+#mapid {
+    height: 180px;
+}
 
 /**********************************
 COLORS
