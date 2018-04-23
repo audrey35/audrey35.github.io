@@ -18,6 +18,11 @@
 			height: 100%;
 			margin: 0;
 		}
+
+		#map {
+			height: 80vh;
+			width: 80vw;
+		}
 	</style>
 
 
@@ -58,17 +63,28 @@
 		}
 	});
 
-	var greenIcon = new LeafIcon({iconUrl: 'leaf-green.png'}),
-		redIcon = new LeafIcon({iconUrl: 'leaf-red.png'}),
-		orangeIcon = new LeafIcon({iconUrl: 'leaf-orange.png'});
+	var greenIcon = new LeafIcon({iconUrl: 'img/leaf-green.png'}),
+		redIcon = new LeafIcon({iconUrl: 'img/leaf-red.png'}),
+		orangeIcon = new LeafIcon({iconUrl: 'img/leaf-orange.png'});
 
 	L.marker([51.5, -0.09], {icon: greenIcon}).bindPopup("I am a green leaf.").addTo(map);
 	L.marker([51.495, -0.083], {icon: redIcon}).bindPopup("I am a red leaf.").addTo(map);
 	L.marker([51.49, -0.1], {icon: orangeIcon}).bindPopup("I am an orange leaf.").addTo(map);
 
 </script>
-
-
-
+<footer>
+  <p>&copy; 2016 Audrey Jo.</p>
+  <div id="social">
+	<a target="_blank" href="https://www.linkedin.com/in/audreyjo35">
+	  <i class="fa fa-linkedin fa-2x" title="View my profile on LinkedIn"></i>
+	</a>
+	<a target="_blank" href="pdf/Audrey Jo Resume.pdf">
+	  <i class="fa fa-file-pdf-o fa-2x" title="Download my resume as a PDF"></i>
+	</a>
+	<a target="_blank" href="mailto:audreyjo35@gmail.com">
+	  <i class="fa fa-envelope fa-2x" title="Email me"></i>
+	</a>
+  </div>
+</footer>
 </body>
 </html>
