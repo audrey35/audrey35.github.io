@@ -149,9 +149,9 @@
 			labels = ['<strong>SES</strong>'];
 		for (var i = 0; i < grades.length; i++) {
 			labels.push(
-				'<i style="background:' + getColor(grades[i]) + '"></i><span>' + grades[i] + '</span>');
+				'<i style="background:' + getColor(grades[i]) + '"></i><i style="float:clear">' + grades[i] + '</i>');
 		}
-		div.innerHTML = labels.join('<br>');
+		div.innerHTML = labels;
 		return div;
 	};
 	legend.addTo(map);
