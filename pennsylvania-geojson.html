@@ -183,7 +183,7 @@
 			// loop through the category values and generate a label with a coloured square for each value
 		for (var i = 0; i < category.length; i++) {
 			div.innerHTML +=
-				'<i style="background:' + getColor(category[i]) + '"></i> ' + category[i] + '<br>';
+				'<i style="background:' + getColor(category[i] + 1) + '"></i> ' + category[i] + '<br>';
 		}
 		return div;
 	};
