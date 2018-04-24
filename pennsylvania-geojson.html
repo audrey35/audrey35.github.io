@@ -177,20 +177,14 @@
 
 		var div = L.DomUtil.create('div', 'info legend'),
 			grades = ["Low", "Medium", "High SES"],
-			labels = [],
-			from, to;
+			labels = ["Low", "Medium", "High"];
 
 		for (var i = 0; i < grades.length; i++) {
-			from = grades[i];
-			to = grades[i + 1];
+			div.innerHTML +=
+            grades[i] + (" "+ labels[i]) +'<br>';
+    }
 
-			labels.push(
-				'<i style="background:' + getColor(from + 1) + '"></i> ' +
-				from + (to ? '&ndash;' + to : '+'));
-		}
-
-		div.innerHTML = labels.join('<br>');
-		return div;
+    return div;
 	};
 
 	legend.addTo(map);
