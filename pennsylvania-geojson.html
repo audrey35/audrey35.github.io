@@ -146,14 +146,13 @@
 	legend.onAdd = function (map) {
 		var div = L.DomUtil.create('div', 'info legend'),
 			grades = ["Low", "Medium", "High SES"],
-			labels = [],
+			labels = ['<strong>SES</strong>'],
 			from, to;
 		for (var i = 0; i < grades.length; i++) {
 			from = grades[i];
 			to = grades[i + 1];
 			labels.push(
-				'<i style="background:' + getColor(from + 1) + '"></i> ' +
-				from + (to ? '&ndash;' + to : '+'));
+				'<i style="background:' + getColor(grades[i]) + '"></i><i>' + grades[i] + '</i>');
 		}
 		div.innerHTML = labels.join('<br>');
 		return div;
