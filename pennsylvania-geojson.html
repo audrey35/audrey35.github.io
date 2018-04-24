@@ -110,10 +110,11 @@
 
 	// get color depending on population density value
 	function getColor(d) {
-		return d == "Low" ? '#FFFFBE' :
-				d == "Medium"  ? '#D3FFBE' :
-				d == "High SES"  ? '#FFBEBE' :
-							'#828282';
+	switch (d) {
+		case 'Low': return '#FFFFBE';
+		case 'Medium': return '#D3FFBE';
+		case 'High SES': return '#FFBEBE';
+		default: return '#828282';
 	}
 
 	function style(feature) {
@@ -176,15 +177,15 @@
 	legend.onAdd = function (map) {
 
 		var div = L.DomUtil.create('div', 'info legend'),
-			grades = ["Low", "Medium", "High SES"],
+			category = ["Low", "Medium", "High SES"];
 			labels = ["Low", "Medium", "High"];
 
-		for (var i = 0; i < grades.length; i++) {
+			// loop through the category values and generate a label with a coloured square for each value
+		for (var i = 0; i < category.length; i++) {
 			div.innerHTML +=
-            '<i style="background:' + getColor(grades[i]) + '"></i>' + labels[i]) +'<br>';
-    }
-
-    return div;
+				'<i style="background:' + getColour(category[i]) + '"></i> ' + (category[i] ? category[i] + '<br>' : '+');
+		}
+		return div;
 	};
 
 	legend.addTo(map);
