@@ -149,7 +149,7 @@
 			labels = ['<strong>SES</strong>'];
 		for (var i = 0; i < grades.length; i++) {
 			labels.push(
-				'<i style="background:' + getColor(grades[i]) + '"></i><input type="text" value="' + grades[i] + '"/>');
+				'<i style="background:' + getColor(grades[i]) + '"></i><em>' + grades[i] + '</em>');
 		}
 		div.innerHTML = labels.join('<br>');
 		return div;
