@@ -188,7 +188,7 @@
 			to = grades[i + 1];
 
 			labels.push(
-				'<i style="background:' + getColor(grades[i]) + '"></i> ' + (categories[i] ? categories[i] : '+'));
+				'<i style="background:' + getColor(grades[i]) + '"></i> ' + categories[i] + '');
 		}
 
 		div.innerHTML = labels.join('<br>');
