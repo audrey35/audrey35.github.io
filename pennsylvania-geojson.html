@@ -181,7 +181,7 @@
 
 		for (var i = 0; i < grades.length; i++) {
 			div.innerHTML +=
-            grades[i] + (" "+ labels[i]) +'<br>';
+            '<i style="background:' + getColor(grades[i]) + '"></i>' + labels[i]) +'<br>';
     }
 
     return div;
