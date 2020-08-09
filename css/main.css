@@ -17,8 +17,8 @@ a {
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 60%;
+    max-height: 60%;
 }
 
 h3 {
@@ -60,33 +60,6 @@ h2 {
 
 
 /**********************************
-NAVIGATION
-***********************************/
-
-nav {
-    text-align: center;
-    padding: 10px 0;
-    margin: 20px 0 0;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0 10px;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-}
-
-nav a {
-    font-weight: 800;
-    padding: 15px 10px;
-}
-
-
-
-/**********************************
 FOOTER
 ***********************************/
 
@@ -121,25 +94,9 @@ footer div a {
 PAGE: PORTFOLIO
 ***********************************/
 
-#gallery {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#gallery li {
-    float: left;
-    width: 45%;
-    margin: 2.5%;
-    background-color: #f5f5f5;
-    color: #bdc3c7;
-}
-
-#gallery li a p {
-    margin: 0;
-    padding: 2%;
-    font-size: 0.75em;
-    color: #bdc3c7
+.gallery {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 
@@ -149,10 +106,9 @@ PAGE: ABOUT
 ***********************************/
 
 .profile-photo {
-    display: block;
     max-width: 150px;
-    margin: 0 auto 30px;
-    border-radius: 80%;
+    max-height: 150px;
+    border-radius: 50%;
     clear: both;
 }
 
@@ -178,26 +134,6 @@ PAGE: CONTACT
     margin: 0 0 10px;
 }
 
-.contact-info li.phone a {
-    background-image: url('../img/phone.png');
-}
-
-.contact-info li.mail a {
-    background-image: url('../img/mail.png');
-}
-
-.contact-info li.twitter a {
-    background-image: url('../img/twitter.png');
-}
-
-/**********************************
-PAGE: LEAFLET-QUICK-START-GUIDE
-***********************************/
-
-#mapid {
-    height: 180px;
-}
-
 /**********************************
 COLORS
 ***********************************/
@@ -214,11 +150,6 @@ header {
     border-color: #599a68;
 }
 
-/* nav background on mobile */
-nav {
-    background: #599a68;
-}
-
 /* logo text */
 h1, h2 {
     color: #fff;
@@ -227,14 +158,4 @@ h1, h2 {
 /* links */
 a {
     color: #6ab47b;
-}
-
-/* nav link */
-nav a, nav a:visited {
-    color: #fff;
-}
-
-/* selected nav link */
-nav a.selected, nav a:hover {
-    color: #32673f;
 }
