@@ -1,81 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Audrey Jo</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <header>
-      <a href="index.html" id="logo">
-        <h1>Audrey Jo</h1>
-        <h2>Software Engineer</h2>
-      </a>
-    </header>
-    <div id="wrapper">
-      <section>
-        <img src="img/profilephoto.jpg" alt="Photo of Audrey Jo" class="profile-photo">
-        <h3>About</h3>
-        <p>My name is Audrey Jo and I am currently pursuing a master’s degree in Computer Science
-          at Northeastern University. Previously, I worked as a Geographic Information Systems
-          (GIS) analyst, analyzing satellite imagery to identify patterns of wildfires and
-          measuring evaporation. As a GIS analyst, I began to realize that my passion for
-          programming, rather than GIS, had the power to change the company’s expectations of a
-          GIS analyst and the ability to change the company culture to encourage collaboration.
-          I wanted to become a developer and create a team of experts from different backgrounds,
-          but a common desire to solve a challenging, multi-disciplinary problem.
-          As a GIS analyst, I developed a variety of skills necessary for success in
-          Computer Science including leadership and solving difficult problems as a team,
-          in a timely manner. In my MSCS program, I have programmed in Java and used
-          Spring Boot and Flask to build REST APIs for data stored in MongoDB and SQL databases.
-          I love to learn and gather new information at a measured pace and give myself time
-          and space to ponder and process the information. I believe that my experience as a
-          GIS analyst, in conjunction with the skills I am developing in my MSCS program,
-          will make me a fit for back-end developer position. My current goal is to find a co-op
-          or internship position that will help me gain experience and an understanding of what
-          it is really like to work as a developer.
-        </p>
-      </section>
-      <h3 class="gallery">Portfolio</h3>
-      <section class="gallery">
-        <a href="https://coronavirus-tracker-web-app.herokuapp.com/">
-          <img src="img/CoronavirusTracker.png" alt="image of Coronavirus Tracker Web App">
-          <p>Coronavirus Tracker Application</p>
-        </a>
-      </section>
-      <section id="primary">
-        <h3>General Information</h3>
-        <p>I am not currently looking for new design work, but I am available for speaking gigs and similar engagements. If you have any questions, please don't hesitate to contact me!</p>
-        <p>Please only use phone contact for urgent inquiries. Otherwise, Twitter and email are the best way to reach me.</p>
-      </section>
-      <section id="secondary">
-        <h3>Contact Details</h3>
-        <ul class="contact-info">
-          <li class="mail"><a href="mailto:audreyjo35@gmail.com">audreyjo35@gmail.com</a></li>
+
+<head>
+  <!-- Source: https://github.com/akashyap2013/PortFolio_Website -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Audrey Jo</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!--  font awesome icons  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
+  <!--  custom css file  -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--  Responsive css file  -->
+  <link rel="stylesheet" href="css/responsive2.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!--  ======================= Start Header Area ============================== -->
+
+<header class="header_area">
+  <div class="main-menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"><img src="img/about/audrey-logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">portfolio</a>
+          </li>
         </ul>
-      </section>
-      <footer>
-        <p>&copy; 2016 Audrey Jo.</p>
-        <div id="social">
-          <a target="_blank" href="https://www.linkedin.com/in/audreyjo35">
-            <i class="fa fa-linkedin fa-2x" title="View my profile on LinkedIn"></i>
-          </a>
-          <a target="_blank" href="https://github.com/audrey35/">
-            <i class="fa fa-github fa-2x" title="View my code on GitHub"></i>
-          </a>
-          <a target="_blank" href="pdf/Audrey Jo Resume.pdf">
-            <i class="fa fa-file-pdf-o fa-2x" title="Download my resume as a PDF"></i>
-          </a>
-          <a target="_blank" href="mailto:audreyjo35@gmail.com">
-            <i class="fa fa-envelope fa-2x" title="Email me"></i>
-          </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!--  ======================= End Header Area ============================== -->
+
+<!--  ======================= Start Main Area ================================ -->
+<main class="site-main">
+
+
+  <!--  ======================= Start Banner Area =======================  -->
+  <section id="home" class="site-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 site-title">
+          <h3 class="title-text">Hello</h3>
+          <h1 class="title-text text-uppercase">I am Audrey</h1>
+          <h4 class="title-text text-uppercase">Software Engineer</h4>
+          <div class="site-buttons">
+            <div class="social d-flex flex-row flex-wrap">
+              <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/audreyjo35">
+                <i class="fab fa-linkedin-in fa-2x" title="View my profile on LinkedIn"></i>
+              </a>
+              <a class="social-icon" target="_blank" href="pdf/Audrey Jo Resume.pdf">
+                <i class="far fa-file-pdf fa-2x" title="Get Resume"></i>
+              </a>
+              <a class="social-icon" target="_blank" href="https://github.com/audrey35/">
+                <i class="fab fa-github fa-2x" title="View my code on GitHub"></i>
+              </a>
+
+              <a class="social-icon" target="_blank" href="mailto:audreyjo35@gmail.com">
+                <i class="far fa-envelope fa-2x" title="Email me"></i>
+              </a>
+            </div>
+          </div>
         </div>
-      </footer>
+        <div class="col-lg-6 col-md-12 banner-image">
+          <img src="img/about/profilephoto.jpg" alt="photo of Audrey" class="img-fluid profile-photo">
+        </div>
+      </div>
     </div>
-  </body>
+  </section>
+  <!--  ======================= End Banner Area =======================  -->
+
+  <!--  ========================= About Area ==========================  -->
+
+  <section id="about" class="about-area">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="about-image">
+            <img src="img/about/about-us.png" alt="About us" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 about-title">
+          <h2 class="text-uppercase pt-5">
+            <span>Let me</span>
+            <span>introduce</span>
+            <span>myself</span>
+          </h2>
+          <div class="paragraph py-4 w-75">
+            <p class="para">
+              My name is Audrey Jo and I am currently pursuing a master’s degree in Computer Science
+              at Northeastern University. Previously, I worked as a Geographic Information
+              Systems (GIS) analyst, analyzing satellite imagery to identify patterns of wildfires
+              and measuring evaporation. As a GIS analyst, I began to realize that my passion for
+              programming, rather than GIS, had the power to change the company’s expectations of
+              a GIS analyst and the ability to change the company culture to encourage
+              collaboration.
+
+            </p>
+            <p class="para">
+              I wanted to become a developer and create a team of experts from different
+              backgrounds, but a common desire to solve a challenging, multi-disciplinary problem.
+              As a GIS analyst, I developed a variety of skills necessary for success in
+              Computer Science including leadership and solving difficult problems as a team,
+              in a timely manner.
+            </p>
+            <p class="para">
+              In my MSCS program, I have programmed in Java and used Spring Boot and Flask to
+              build REST APIs for data stored in MongoDB and SQL databases. I love to learn and
+              gather new information at a measured pace and give myself time and space to ponder
+              and process the information.
+            </p>
+            <p class="para">
+              I believe that my experience as a GIS analyst,
+              in conjunction with the skills I am developing in my MSCS program, will make me a
+              fit for back-end developer position. My current goal is to find a co-op or
+              internship position that will help me gain experience and an understanding of
+              what it is really like to work as a developer.
+            </p>
+          </div>
+          <div class="social d-flex flex-row flex-wrap">
+            <a class="social-icon" target="_blank" href="pdf/Audrey Jo Resume.pdf">
+              <i class="far fa-file-pdf fa-2x" title="Get Resume"></i>
+            </a>
+            <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/audreyjo35">
+              <i class="fab fa-linkedin fa-2x" title="View my profile on LinkedIn"></i>
+            </a>
+            <a class="social-icon" target="_blank" href="https://github.com/audrey35/">
+              <i class="fab fa-github fa-2x" title="View my code on GitHub"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  ========================= End About Area ==========================  -->
+
+  <!--  ====================== Start Services Area =============================  -->
+
+  <section id="services" class="services-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center services-title">
+          <h1 class="text-uppercase title-text">Experience</h1>
+        </div>
+      </div>
+      <div class="container services-list">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="services">
+              <div class="sevices-img text-center py-4">
+                <i class="fas fa-server fa-4x service"></i>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title text-uppercase font-roboto">Back-end developer</h5>
+                <p class="card-text text-secondary">
+                  Experience building the back-end component for websites.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="services">
+              <div class="sevices-img text-center py-4">
+                <i class="fab fa-python fa-4x service"></i>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title text-uppercase font-roboto">Python developer</h5>
+                <p class="card-text text-secondary">
+                  6 years of development experience in Python.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="services">
+              <div class="sevices-img text-center py-4">
+                <i class="fab fa-java fa-4x service"></i>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title text-uppercase font-roboto">Java developer</h5>
+                <p class="card-text text-secondary">
+                  Experience developing in Java.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  ====================== End Services Area =============================  -->
+
+  <!--  ======================= Project Area =============================  -->
+
+  <section id="portfolio" class="project-area">
+    <div class="container">
+      <div class="project-title pb-5">
+        <h1 class="text-uppercase title-h1">Recent Projects</h1>
+        <p class="para">
+          Below are some projects I have worked on. Please click on an image to see a live web app.
+        </p>
+      </div>
+      <div class="row grid">
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+          <div class="our-project">
+            <div class="img">
+              <a class="test-popup-link" target="_blank" href="https://coronavirus-tracker-web-app.herokuapp.com/">
+                <img src="img/portfolio/coronavirus-tracker.png" alt="picture of Corona Virus Tracker" class="img-fluid">
+              </a>
+            </div>
+            <div class="title py-4">
+              <h4 class="text-uppercase">Corona Virus Tracker (
+                <a class="test-popup-link" target="_blank" href="https://github.com/audrey35/coronavirus-tracker">code</a>
+                )</h4>
+              <span class="text-secondary">Java, Spring Boot, Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+          <div class="our-project">
+            <div class="img">
+              <a class="test-popup-link" href="https://audrey35.github.io/tribute-page/">
+                <img src="img/portfolio/tribute-page.png" alt="picture of Eddie Woo's tribute page" class="img-fluid">
+              </a>
+            </div>
+            <div class="title py-4">
+              <h4 class="text-uppercase">Tribute page (
+                <a class="test-popup-link" target="_blank" href="https://github.com/audrey35/tribute-page">code</a>
+                )</h4>
+              <span class="text-secondary">HTML, CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+          <div class="our-project">
+            <div class="img">
+              <a class="test-popup-link" href="img/portfolio/p3.jpg">
+                <img src="img/portfolio/p3.jpg" alt="portfolio-3" class="img-fluid">
+              </a>
+            </div>
+            <div class="title py-4">
+              <h4 class="text-uppercase">Female light</h4>
+              <span class="text-secondary">Popular, Portfolio</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+          <div class="our-project">
+            <div class="img">
+              <a class="test-popup-link" href="img/portfolio/p4.jpg">
+                <img src="img/portfolio/p4.jpg" alt="portfolio-4" class="img-fluid">
+              </a>
+            </div>
+            <div class="title py-4">
+              <h4 class="text-uppercase">Fourth Air</h4>
+              <span class="text-secondary">Upcoming, Portfolio</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+          <div class="our-project">
+            <div class="img">
+              <a class="test-popup-link" href="img/portfolio/p5.jpg">
+                <img src="img/portfolio/p5.jpg" alt="portfolio-5" class="img-fluid">
+              </a>
+            </div>
+            <div class="title py-4">
+              <h4 class="text-uppercase">Muliple fown</h4>
+              <span class="text-secondary">Upcoming, Portfolio</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+          <div class="our-project">
+            <div class="img">
+              <a class="test-popup-link" href="img/portfolio/p6.jpg">
+                <img src="img/portfolio/p6.jpg" alt="portfolio-6" class="img-fluid">
+              </a>
+            </div>
+            <div class="title py-4">
+              <h4 class="text-uppercase">Together sign</h4>
+              <span class="text-secondary">Following, Portfolio</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+          <div class="our-project">
+            <div class="img">
+              <a class="test-popup-link" href="img/portfolio/p7.jpg">
+                <img src="img/portfolio/p7.jpg" alt="portfolio-7" class="img-fluid">
+              </a>
+            </div>
+            <div class="title py-4">
+              <h4 class="text-uppercase">Green Heaven</h4>
+              <span class="text-secondary">Following, Portfolio</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+          <div class="our-project">
+            <div class="img">
+              <a class="test-popup-link" href="img/portfolio/p8.jpg">
+                <img src="img/portfolio/p8.jpg" alt="portfolio-8" class="img-fluid">
+              </a>
+            </div>
+            <div class="title py-4">
+              <h4 class="text-uppercase">Fly Male</h4>
+              <span class="text-secondary">Following, Portfolio</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+          <div class="our-project">
+            <div class="img">
+              <a class="test-popup-link" href="img/portfolio/p9.jpg">
+                <img src="img/portfolio/p9.jpg" alt="portfolio-9" class="img-fluid">
+              </a>
+            </div>
+            <div class="title py-4">
+              <h4 class="text-uppercase">Camera Lens</h4>
+              <span class="text-secondary">Upcoming, Portfolio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  ======================= End Project Area =============================  -->
+
+
+</main>
+<!--  ======================= End Main Area ================================ -->
+
+<footer class="footer-area">
+  <div class="container">
+    <div class="">
+      <div class="site-logo text-center py-4">
+        <img src="img/about/audrey-logo.png" alt="logo">
+      </div>
+      <div class="text-center">
+        <a class="social-icon center" target="_blank" href="pdf/Audrey Jo Resume.pdf">
+          <i class="far fa-file-pdf fa-2x" title="Get Resume"></i>
+        </a>
+        <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/audreyjo35">
+          <i class="fab fa-linkedin fa-2x" title="View my profile on LinkedIn"></i>
+        </a>
+        <a class="social-icon" target="_blank" href="https://github.com/audrey35/">
+          <i class="fab fa-github fa-2x" title="View my code on GitHub"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
 </html>

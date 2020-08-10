@@ -1,16 +1,5 @@
-# audrey35.github.io
-Portfolio
+# Code for Audrey's Portfolio site
 
-## Hello world!
+My Portfolio site is http://audrey35.github.io/
 
-This is my first try at github!
-
-My Github user page is at: 
-https://github.com/audrey35/
-
-My Github Pages repo can be found at:  
-https://github.com/audrey35/audrey35.github.io/
-
-And, soon, you can see my customized homepage at:
-
-http://audrey35.github.io/
+The site was created using https://github.com/akashyap2013/PortFolio_Website
