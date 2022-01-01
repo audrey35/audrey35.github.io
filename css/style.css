@@ -1,3 +1,15 @@
+/* General */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* custom styling for all icons  */
+i.fas,
+i.fab {
+  color: #4f7a74;
+  font-size: 100px;
+}
+
 /* Navigation */
 .bg-white {
   background: white;
@@ -7,27 +19,39 @@
   font-weight: bold;
 }
 
-/* link */
-a {
-  color: #994f00;
-}
+/* link a {
+  color: black;
+} */
 
 /* mouse over link */
 a:hover {
-  color: black;
+  color: #994f00;
 }
 
 /* selected link */
 a:active {
-  color: black;
+  color: #994f00;
 }
 
 section {
   padding-top: 60px;
 }
 
-h1 {
-  color: #994f00;
+/* Headline */
+#headline {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin: auto;
+}
+
+#headline img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-position: 0px;
+  object-fit: cover;
+  box-shadow: 2px 2px 5px 0px #4f7a74;
 }
 
 /* Banner Area */

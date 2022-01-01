@@ -4,10 +4,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google Fonts Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Font Awesome Icons 4.7.0 -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css"
     />
 
     <!-- Bootstrap CSS 4.6.1 -->
@@ -25,40 +37,101 @@
   <body class="container">
     <nav class="nav fixed-top bg-white p-2">
       <a href="/"><h3>Audrey Jo</h3></a>
+      <a class="nav-link" href="#about">About</a>
       <a class="nav-link" href="#skills">Skills</a>
       <a class="nav-link" href="#portfolio">Portfolio</a>
       <a class="nav-link" href="#contact">Contact</a>
     </nav>
 
+    <!-- Headline -->
+    <section id="headline" class="">
+      <img
+        src="img/about/profilephoto.jpg"
+        alt="Photo of Audrey"
+        loading="lazy"
+      />
+      <div>
+        <h2 class="bio-title">Audrey Jo</h2>
+        <p class="bio-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+    </section>
+
     <!-- About -->
     <section id="about" class="">
       <h1>About</h1>
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+        My name is Audrey Jo and I am currently pursuing a master’s degree in
+        Computer Science at Northeastern University. Previously, I worked as a
+        Geographic Information Systems (GIS) analyst, analyzing satellite
+        imagery to identify patterns of wildfires and measuring evaporation.
+      </p>
+      <p>
+        While working, I realized that programming is a fun, domainless tool
+        that is applicable to any industry, so I chose to become a developer.
+      </p>
+      <p>
+        In my MSCS program, I have programmed in Java and used Spring Boot and
+        Flask to build REST APIs for data stored in MongoDB and SQL databases. I
+        love to learn and gather new information at a measured pace and give
+        myself time and space to ponder and process the information.
+      </p>
+      <p>
+        I believe that my experience as a GIS analyst, in conjunction with the
+        skills I am developing in my MSCS program, will make me a fit for
+        back-end developer position.
       </p>
     </section>
 
     <section id="skills" class="">
       <h1>Skills</h1>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
+      <div class="row">
+        <div class="card text-center" style="width: 10rem">
+          <i class="fab fa-python my-2"></i>
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text text-muted">6 years</p>
+          </div>
+        </div>
+        <div class="card text-center mx-4" style="width: 10rem">
+          <i class="fab fa-git-alt my-2"></i>
+          <div class="card-body">
+            <h5 class="card-title">Git</h5>
+            <p class="card-text text-muted">4 years</p>
+          </div>
+        </div>
+        <div class="card text-center" style="width: 10rem">
+          <i class="fab fa-java my-2"></i>
+          <div class="card-body">
+            <h5 class="card-title">Java</h5>
+            <p class="card-text text-muted">2 years</p>
+          </div>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="card text-center" style="width: 10rem">
+          <i class="fab fa-js my-2"></i>
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text text-muted">1 year</p>
+          </div>
+        </div>
+        <div class="card text-center mx-4" style="width: 10rem">
+          <i class="fab fa-react my-2"></i>
+          <div class="card-body">
+            <h5 class="card-title">React</h5>
+            <p class="card-text text-muted">1 year</p>
+          </div>
+        </div>
+        <div class="card text-center" style="width: 10rem">
+          <i class="fab fa-node my-2"></i>
+          <div class="card-body">
+            <h5 class="card-title">Node</h5>
+            <p class="card-text text-muted">1 year</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="portfolio" class="">
