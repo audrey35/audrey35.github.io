@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Audrey Jo Portfolio</title>
+
+        <!-- makes it easier to get the site to look identical across all browsers -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" 
+        integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+        <!-- My css file -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h3 class="logo">&lt;audrey&gt;</h3>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Animator
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Spring Boot</p>
+            <img src="img/portfolio/animator.png" alt="a picture of Animator site" class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p><a href="https://text-to-svg.herokuapp.com" target="_blank" class="btn">View Animator (Heroku)</a></p>
+            <p>Voluptatibus, soluta blandititis! Incidunt ea unde itaque illo molestiae eligendi 
+                sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Voluptatibus, soluta blandititis! Incidunt ea unde itaque illo molestiae eligendi 
+                sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:audreyjo35@gmail.com" class="footer__link">audreyjo35@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/audreyjo35"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/audrey35/"><i class="fab fa-github"></i></a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
