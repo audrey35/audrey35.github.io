@@ -1,377 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Audrey Jo Portfolio</title>
 
-<head>
-  <!-- Source: https://github.com/akashyap2013/PortFolio_Website -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Audrey Jo</title>
+        <!-- makes it easier to get the site to look identical across all browsers -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" 
+        integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!--  font awesome icons  -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
 
-  <!--  custom css file  -->
-  <link rel="stylesheet" href="css/style.css">
+        <!-- My css file -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h3 class="logo">&lt;audrey&gt;</h3>
 
-  <!--  Responsive css file  -->
-  <link rel="stylesheet" href="css/responsive2.css">
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
 
-</head>
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Audrey Jo</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <img src="img/profilephoto.jpg" alt="a picture of Audrey Jo smiling" class="intro__img">
+        </section>
 
-<body>
-
-
-<!--  ======================= Start Header Area ============================== -->
-
-<header class="header_area">
-  <div class="main-menu">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#"><img src="img/about/audrey-logo.png" alt="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="mr-auto"></div>
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">portfolio</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</header>
-
-<!--  ======================= End Header Area ============================== -->
-
-<!--  ======================= Start Main Area ================================ -->
-<main class="site-main">
-
-
-  <!--  ======================= Start Banner Area =======================  -->
-  <section id="home" class="site-banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 site-title">
-          <h3 class="title-text">Hello</h3>
-          <h1 class="title-text text-uppercase">I am Audrey</h1>
-          <h4 class="title-text text-uppercase">Software Engineer</h4>
-          <div class="site-buttons">
-            <div class="social d-flex flex-row flex-wrap">
-              <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/audreyjo35">
-                <i class="fab fa-linkedin-in fa-2x" title="View my profile on LinkedIn"></i>
-              </a>
-              <a class="social-icon" target="_blank" href="pdf/Audrey Jo Resume.pdf">
-                <i class="far fa-file-pdf fa-2x" title="Get Resume"></i>
-              </a>
-              <a class="social-icon" target="_blank" href="https://github.com/audrey35/">
-                <i class="fab fa-github fa-2x" title="View my code on GitHub"></i>
-              </a>
-
-              <a class="social-icon" target="_blank" href="mailto:audreyjo35@gmail.com">
-                <i class="far fa-envelope fa-2x" title="Email me"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 banner-image">
-          <img src="img/about/profilephoto.jpg" alt="photo of Audrey" class="img-fluid profile-photo">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--  ======================= End Banner Area =======================  -->
-
-  <!--  ========================= About Area ==========================  -->
-
-  <section id="about" class="about-area">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <div class="about-image">
-            <img src="img/about/about-us.png" alt="About us" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 about-title">
-          <h2 class="text-uppercase pt-5">
-            <span>Let me</span>
-            <span>introduce</span>
-            <span>myself</span>
-          </h2>
-          <div class="paragraph py-4 w-75">
-            <p class="para">
-              My name is Audrey Jo and I am currently pursuing a master’s degree in Computer Science
-              at Northeastern University. Previously, I worked as a Geographic Information
-              Systems (GIS) analyst, analyzing satellite imagery to identify patterns of wildfires
-              and measuring evaporation.
-            </p>
-            <p class="para">
-              While working, I realized that programming is a fun, domainless tool that is 
-              applicable to any industry, so I chose to become a developer.
-            </p>
-            <p class="para">
-              In my MSCS program, I have programmed in Java and used Spring Boot and Flask to
-              build REST APIs for data stored in MongoDB and SQL databases. I love to learn and
-              gather new information at a measured pace and give myself time and space to ponder
-              and process the information.
-            </p>
-            <p class="para">
-              I believe that my experience as a GIS analyst,
-              in conjunction with the skills I am developing in my MSCS program, will make me a
-              fit for back-end developer position. My current goal is to find a co-op or
-              internship position that will help me gain experience and an understanding of
-              what it is really like to work as a developer.
-            </p>
-          </div>
-          <div class="social d-flex flex-row flex-wrap">
-            <a class="social-icon" target="_blank" href="pdf/Audrey Jo Resume.pdf">
-              <i class="far fa-file-pdf fa-2x" title="Get Resume"></i>
-            </a>
-            <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/audreyjo35">
-              <i class="fab fa-linkedin fa-2x" title="View my profile on LinkedIn"></i>
-            </a>
-            <a class="social-icon" target="_blank" href="https://github.com/audrey35/">
-              <i class="fab fa-github fa-2x" title="View my code on GitHub"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--  ========================= End About Area ==========================  -->
-
-  <!--  ====================== Start Services Area =============================  -->
-
-  <section id="services" class="services-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center services-title">
-          <h1 class="text-uppercase title-text">Experience</h1>
-        </div>
-      </div>
-      <div class="container services-list">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12">
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
             <div class="services">
-              <div class="sevices-img text-center py-4">
-                <i class="fas fa-server fa-4x service"></i>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title text-uppercase font-roboto">Back-end developer</h5>
-                <p class="card-text text-secondary">
-                  Experience building the back-end component for websites.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="services">
-              <div class="sevices-img text-center py-4">
-                <i class="fab fa-python fa-4x service"></i>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title text-uppercase font-roboto">Python developer</h5>
-                <p class="card-text text-secondary">
-                  6 years of development experience in Python.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="services">
-              <div class="sevices-img text-center py-4">
-                <i class="fab fa-java fa-4x service"></i>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title text-uppercase font-roboto">Java developer</h5>
-                <p class="card-text text-secondary">
-                  Experience developing in Java.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+                <div class="service">
+                    <h3>Design + Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                        veniam, quis nostrud exercitation ullamco laboris nisi</p>
+                </div> <!-- / service -->
 
-  <!--  ====================== End Services Area =============================  -->
+                <div class="service">
+                    <h3>E-Commerce</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                        veniam, quis nostrud exercitation ullamco laboris nisi</p>
+                </div> <!-- / service -->
 
-  <!--  ======================= Project Area =============================  -->
+                <div class="service">
+                    <h3>WordPress</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                        veniam, quis nostrud exercitation ullamco laboris nisi</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
 
-  <section id="portfolio" class="project-area">
-    <div class="container">
-      <div class="project-title pb-5">
-        <h1 class="text-uppercase title-h1">Recent Projects</h1>
-        <p class="para">
-          Below are some projects I have worked on. Please click on an image to see a live web app.
-        </p>
-      </div>
-      <div class="row grid">
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
-          <div class="our-project">
-            <div class="img">
-              <a class="test-popup-link" target="_blank" href="https://coronavirus-tracker-web-app.herokuapp.com/">
-                <img src="img/portfolio/coronavirus-tracker.png" alt="picture of Corona Virus Tracker" class="img-fluid">
-              </a>
-            </div>
-            <div class="title py-4">
-              <h4 class="text-uppercase">COVID-19 Tracker</h4>
-              <span class="text-secondary">Java, Spring Boot, Bootstrap</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
-          <div class="our-project">
-            <div class="img">
-              <a class="test-popup-link" href="https://svg-animations.herokuapp.com/">
-                <img src="img/portfolio/animator.png" alt="picture of SVG animator" class="img-fluid">
-              </a>
-            </div>
-            <div class="title py-4">
-              <h4 class="text-uppercase">SVG Animator</h4>
-              <span class="text-secondary">Java, Spring Boot</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
-          <div class="our-project">
-            <div class="img">
-              <a class="test-popup-link" href="img/portfolio/p3.jpg">
-                <img src="img/portfolio/p3.jpg" alt="portfolio-3" class="img-fluid">
-              </a>
-            </div>
-            <div class="title py-4">
-              <h4 class="text-uppercase">Female light</h4>
-              <span class="text-secondary">Popular, Portfolio</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
-          <div class="our-project">
-            <div class="img">
-              <a class="test-popup-link" href="img/portfolio/p4.jpg">
-                <img src="img/portfolio/p4.jpg" alt="portfolio-4" class="img-fluid">
-              </a>
-            </div>
-            <div class="title py-4">
-              <h4 class="text-uppercase">Fourth Air</h4>
-              <span class="text-secondary">Upcoming, Portfolio</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
-          <div class="our-project">
-            <div class="img">
-              <a class="test-popup-link" href="img/portfolio/p5.jpg">
-                <img src="img/portfolio/p5.jpg" alt="portfolio-5" class="img-fluid">
-              </a>
-            </div>
-            <div class="title py-4">
-              <h4 class="text-uppercase">Muliple fown</h4>
-              <span class="text-secondary">Upcoming, Portfolio</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
-          <div class="our-project">
-            <div class="img">
-              <a class="test-popup-link" href="img/portfolio/p6.jpg">
-                <img src="img/portfolio/p6.jpg" alt="portfolio-6" class="img-fluid">
-              </a>
-            </div>
-            <div class="title py-4">
-              <h4 class="text-uppercase">Together sign</h4>
-              <span class="text-secondary">Following, Portfolio</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
-          <div class="our-project">
-            <div class="img">
-              <a class="test-popup-link" href="img/portfolio/p7.jpg">
-                <img src="img/portfolio/p7.jpg" alt="portfolio-7" class="img-fluid">
-              </a>
-            </div>
-            <div class="title py-4">
-              <h4 class="text-uppercase">Green Heaven</h4>
-              <span class="text-secondary">Following, Portfolio</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
-          <div class="our-project">
-            <div class="img">
-              <a class="test-popup-link" href="img/portfolio/p8.jpg">
-                <img src="img/portfolio/p8.jpg" alt="portfolio-8" class="img-fluid">
-              </a>
-            </div>
-            <div class="title py-4">
-              <h4 class="text-uppercase">Fly Male</h4>
-              <span class="text-secondary">Following, Portfolio</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
-          <div class="our-project">
-            <div class="img">
-              <a class="test-popup-link" href="img/portfolio/p9.jpg">
-                <img src="img/portfolio/p9.jpg" alt="portfolio-9" class="img-fluid">
-              </a>
-            </div>
-            <div class="title py-4">
-              <h4 class="text-uppercase">Camera Lens</h4>
-              <span class="text-secondary">Upcoming, Portfolio</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <a href="#work" class="btn">see my work</a>
+        </section>
 
-  <!--  ======================= End Project Area =============================  -->
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Backend developer in Boston</p>
 
+            <div class="about-me__body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                    veniam, quis nostrud exercitation ullamco laboris nisi</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                    veniam, quis nostrud exercitation ullamco laboris nisi</p>
+            </div>
 
-</main>
-<!--  ======================= End Main Area ================================ -->
+            <img src="img/profilephoto.jpg" alt="Audrey smiling" class="about-me__img">
+        </section>
 
-<footer class="footer-area">
-  <div class="container">
-    <div class="">
-      <div class="site-logo text-center py-4">
-        <img src="img/about/audrey-logo.png" alt="logo">
-      </div>
-      <div class="text-center">
-        <a class="social-icon center" target="_blank" href="pdf/Audrey Jo Resume.pdf">
-          <i class="far fa-file-pdf fa-2x" title="Get Resume"></i>
-        </a>
-        <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/audreyjo35">
-          <i class="fab fa-linkedin fa-2x" title="View my profile on LinkedIn"></i>
-        </a>
-        <a class="social-icon" target="_blank" href="https://github.com/audrey35/">
-          <i class="fab fa-github fa-2x" title="View my code on GitHub"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="https://text-to-svg.herokuapp.com" target="_blank" class="portfolio__item">
+                    <img src="img/portfolio/animator.png" alt="Text Animator" class="portfolio__img">
+                </a>
 
-</body>
+                <!-- Portfolio item 02 -->
+                <a href="https://audrey35.github.io/breakout-game" target="_blank" class="portfolio__item">
+                    <img src="img/portfolio/breakout-game.png" alt="Breakout Game" class="portfolio__img">
+                </a>
 
+                <!-- Portfolio item 03 -->
+                <a href="https://plant-care-web.herokuapp.com" target="_blank" class="portfolio__item">
+                    <img src="img/portfolio/plant-care.png" alt="Plant Care" class="portfolio__img">
+                </a>
+
+                <!-- Portfolio item 04 -->
+                <a href="https://nasa-picture.herokuapp.com/" target="_blank" class="portfolio__item">
+                    <img src="img/portfolio/nasa-picture.png" alt="NASA's Picture of the Day" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:audreyjo35@gmail.com" class="footer__link">audreyjo35@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/audreyjo35"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/audrey35/"><i class="fab fa-github"></i></a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
 </html>
